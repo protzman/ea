@@ -1,0 +1,54 @@
+{
+    "workbench.colorTheme": "Nord",
+    "explorer.confirmDelete": false,
+    "eslint.autoFixOnSave": true,
+    "[javascript]": {
+		"editor.formatOnSave": false
+	},
+    "explorer.confirmDragAndDrop": false,
+    "editor.fontLigatures": true,
+    "editor.fontFamily": "'Fira Code'",
+    "workbench.startupEditor": "newUntitledFile",
+    "better-comments.tags": [
+        {
+            "tag": "!",
+            "color": "#BF616A",
+            "strikethrough": false
+        },
+        {
+            "tag": "?",
+            "color": "#D08770",
+            "strikethrough": false
+        },
+        {
+            "tag": "//",
+            "color": "#A3BE8C",
+            "strikethrough": true
+        },
+        {
+            "tag": "todo",
+            "color": "#EBCB8B",
+            "strikethrough": false
+        },
+        {
+            "tag": "*",
+            "color": "#B48EAD",
+            "strikethrough": false
+        }
+    ],
+    "bracketPairColorizer.consecutivePairColors": [
+        "()",
+        "[]",
+        "{}",
+        [
+            "#5e81ac",
+            "#B48EAD",
+            "#BF616A"
+        ],
+        "Red"
+    ],
+    "auto-rename-tag.activationOnLanguage": [
+        "*"
+    ],
+    "git.ignoreLimitWarning": true,
+}

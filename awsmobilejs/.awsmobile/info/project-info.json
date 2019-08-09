@@ -1,0 +1,19 @@
+{
+	"ProjectName": "providence",
+	"ProjectPath": "/Users/wyattprotzman/providence",
+	"InitializationTime": "2018-08-20-14-40-38",
+	"LastConfigurationTime": "2018-08-20-14-39-57",
+	"LastNPMInstallTime": "",
+	"FrontendLastBuildTime": "",
+	"LastPublishTime": "",
+	"BackendLastSyncTime": "2018-08-21-15-33-11",
+	"BackendLastBuildTime": "2018-08-21-15-30-06",
+	"BackendLastPushTime": "2018-08-21-15-32-13",
+	"BackendProjectID": "d75cc04f-ac5a-4678-b419-33147ecbf9e6",
+	"BackendProjectName": "providence",
+	"BackendProjectConsoleUrl": "https://console.aws.amazon.com/mobilehub/home#/d75cc04f-ac5a-4678-b419-33147ecbf9e6/build",
+	"BackendProjectCreationTime": "2018-08-20T18:40:05.218Z",
+	"BackendProjectLastUpdatedTime": "2018-08-21T19:30:12.900Z",
+	"Framework": "react",
+	"BackendLastSyncToDevTime": "2018-08-21-15-35-12"
+}

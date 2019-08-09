@@ -1,0 +1,131 @@
+--- !com.amazonaws.mobilehub.v0.Project
+features: 
+  cloudlogic: !com.amazonaws.mobilehub.v0.CloudLogic
+    components: 
+      itemsCRUD: !com.amazonaws.mobilehub.v0.API
+        attributes: 
+          name: itemsCRUD
+          requires-signin: false
+          sdk-generation-stage-name: Development
+        paths: 
+          /items: !com.amazonaws.mobilehub.v0.Function
+            codeFilename: uploads/items-20180821152953.zip
+            description: "Handler for calls to resource path : /items/{proxy+}"
+            enableCORS: true
+            environment:  {}
+            handler: lambda.handler
+            hashcode: UzavOGkwOZFKgvvycWRbgwRBRDe/wptbFr/avFfapWM=
+            memorySize: "128"
+            modified: "2018-08-21T19:30:29.448+0000"
+            name: items
+            runtime: nodejs6.10
+            timeout: "3"
+            version: dc07oAjn4YrlGuTc0aK5fQzO577fCaGQ
+          "/items/{proxy+}": !com.amazonaws.mobilehub.v0.Function
+            codeFilename: uploads/items-20180821152953.zip
+            description: "Handler for calls to resource path : /items/{proxy+}"
+            enableCORS: true
+            environment:  {}
+            handler: lambda.handler
+            hashcode: UzavOGkwOZFKgvvycWRbgwRBRDe/wptbFr/avFfapWM=
+            memorySize: "128"
+            modified: "2018-08-21T19:30:29.448+0000"
+            name: items
+            runtime: nodejs6.10
+            timeout: "3"
+            version: ObY9ymgBbPxmPB6eH3xNKJuTsyNAai6J
+      sampleCloudApi: !com.amazonaws.mobilehub.v0.API
+        attributes: 
+          name: sampleCloudApi
+          requires-signin: false
+          sdk-generation-stage-name: Development
+        paths: 
+          /items: !com.amazonaws.mobilehub.v0.Function
+            codeFilename: uploads/sampleLambda-20180821142434.zip
+            description: "Handler for calls to resource path : /items/{proxy+}"
+            enableCORS: true
+            environment:  {}
+            handler: lambda.handler
+            hashcode: g71WjEY555JBROvIR/LGJhNG35KEKZxMZGvRS1GFvpc=
+            memorySize: "128"
+            modified: "2018-08-21T18:25:07.258+0000"
+            name: sampleLambda
+            runtime: nodejs6.10
+            timeout: "3"
+            version: mDj_eI3viCEL3p8RiQwOvk3VGuO3e9mI
+          "/items/{proxy+}": !com.amazonaws.mobilehub.v0.Function
+            codeFilename: uploads/sampleLambda-20180821142434.zip
+            description: "Handler for calls to resource path : /items/{proxy+}"
+            enableCORS: true
+            environment:  {}
+            handler: lambda.handler
+            hashcode: g71WjEY555JBROvIR/LGJhNG35KEKZxMZGvRS1GFvpc=
+            memorySize: "128"
+            modified: "2018-08-21T18:25:07.258+0000"
+            name: sampleLambda
+            runtime: nodejs6.10
+            timeout: "3"
+            version: YsADoKvkn6kuQB_ilKu6kWNijTCxbDpy
+      shopCRUD: !com.amazonaws.mobilehub.v0.API
+        attributes: 
+          name: shopCRUD
+          requires-signin: false
+          sdk-generation-stage-name: Development
+        paths: 
+          /shop: !com.amazonaws.mobilehub.v0.Function
+            codeFilename: uploads/shop-20180821152953.zip
+            description: "Handler for calls to resource path : /shop/{proxy+}"
+            enableCORS: true
+            environment:  {}
+            handler: lambda.handler
+            hashcode: VJQEBphMfJD9TtAEUyEYzIo1NNnaflxxpPgIebt+F6U=
+            memorySize: "128"
+            modified: "2018-08-21T19:30:32.794+0000"
+            name: shop
+            runtime: nodejs6.10
+            timeout: "3"
+            version: 7YlI6q7oqaaNLkwVRCIvumscF6p6t3OD
+          "/shop/{proxy+}": !com.amazonaws.mobilehub.v0.Function
+            codeFilename: uploads/shop-20180821152953.zip
+            description: "Handler for calls to resource path : /shop/{proxy+}"
+            enableCORS: true
+            environment:  {}
+            handler: lambda.handler
+            hashcode: VJQEBphMfJD9TtAEUyEYzIo1NNnaflxxpPgIebt+F6U=
+            memorySize: "128"
+            modified: "2018-08-21T19:30:32.794+0000"
+            name: shop
+            runtime: nodejs6.10
+            timeout: "3"
+            version: 1Ku6IgBK4tMeMzvDZBfFUTph7amX5QML
+  database: !com.amazonaws.mobilehub.v0.Database
+    components: 
+      database-nosql: !com.amazonaws.mobilehub.v0.NoSQLDatabase
+        tables: 
+          - !com.amazonaws.mobilehub.v0.NoSQLTable
+            attributes: 
+              ID: S
+              itemDescription: S
+              itemName: S
+              itemPrice: N
+            hashKeyName: ID
+            hashKeyType: S
+            rangeKeyName: ""
+            rangeKeyType: ""
+            tableName: ___DYNAMIC_PREFIX___-items
+            tablePrivacy: public
+          - !com.amazonaws.mobilehub.v0.NoSQLTable
+            attributes: 
+              ID: S
+              itemDescription: S
+              itemName: S
+              itemPrice: N
+            hashKeyName: ID
+            hashKeyType: S
+            rangeKeyName: ""
+            rangeKeyType: ""
+            tableName: ___DYNAMIC_PREFIX___-shop
+            tablePrivacy: public
+  sign-in: !com.amazonaws.mobilehub.v0.SignIn {}
+name: providence
+region: us-east-1

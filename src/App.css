@@ -1,0 +1,170 @@
+/*
+$nord00: "#2E3440" 
+$nord01: "#3B4252" 
+$nord02: "#434C5E" 
+$nord03: "#4C566A" 
+$nord04: "#D8DEE9" 
+$nord05: "#E5E9F0" 
+$nord06: "#ECEFF4" 
+$nord07: "#8FBCBB" rgba(143,188,187)
+$nord08: "#88C0D0" rgba(136,192,208)
+$nord09: "#81A1C1" rgba(129,161,193)
+$nord10: "#5e81ac" rgba(94,129,172)
+$nord11: "#BF616A" rgba(191,97,106)
+$nord12: "#D08770" 
+$nord13: "#EBCB8B" 
+$nord14: "#A3BE8C" 
+$nord15: "#B48EAD"
+*/
+
+body {
+  font-family: 'Raleway', sans-serif !important;
+  background: #434C5E;
+  color: #D8DEE9 !important;
+}
+
+.navigation{
+  font-family: 'Raleway', sans-serif !important;
+  background: #2E3440 !important;
+  color: #D8DEE9 !important;
+}
+
+.backdrop {
+  margin: 84px 20px 20px 10px !important;
+}
+
+.map {
+  margin: 84px 10px 10px 10px;
+  position: relative;
+}
+
+.contentheader {
+  padding-top: 18px;
+  padding-left: 174px;
+
+}
+
+.content {
+  padding: 20px 10px 10px 81px;
+  margin: 0px 10px 10px 10px;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  background: #2E3440 !important;
+  color: #D8DEE9 !important;
+  position: relative;
+}
+
+.logincontainer {
+  background: #2E3440 !important;
+  color: #D8DEE9 !important;
+  margin: 0px 10px 10px 10px;
+  position: relative;
+}
+
+.logincontent {
+  text-align: center;
+  width: 450px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.loginitem {
+  margin-top: 4em;
+}
+
+.actionsbar {
+  margin-top: 84px;
+  height: 100vh;
+}
+
+.a.mapboxgl-ctrl-logo {
+  opacity: .2 !important;
+}
+
+
+.loading {
+  position: fixed;
+  z-index: 1500;
+  margin: auto;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.loading::after {
+  display: none !important;
+}
+
+.tooltip {
+  opacity: 0.5 !important;
+  background: #D8DEE9 !important;
+  color: #2E3440 !important;
+  border-radius: 2px !important;
+}
+
+.breadcrumb {
+  display: flex;
+  align-items: center;
+}
+
+.cell-overflow {
+  box-sizing: border-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 300px;
+}
+
+
+/* get rid of the base html date picker stuff */
+
+input::-webkit-calendar-picker-indicator{
+  display: none;
+}
+::-webkit-clear-button
+{
+    display: none; /* Hide the button */
+    -webkit-appearance: none; /* turn off default browser styling */
+}
+::-webkit-inner-spin-button{
+  display: none;
+  -webkit-appearance: none
+}
+
+/* get rid of arrow on select */
+select::-webkit-keygen-select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+/* override the focus on the material select */
+.MuiSelect-select-201:focus {
+  background: none !important;
+}
+
+.react-grid-item.react-grid-placeholder {
+  background:#D8DEE9;
+  opacity: 0.1;
+  transition-duration: 100ms;
+  z-index: 2;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+
+.scroll-list {
+  width: 25%;
+  overflow-y: auto;
+}
+
+.user-details {
+  width: 50%;
+}
